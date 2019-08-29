@@ -48,10 +48,6 @@ Added interval statistics analysis to the light curve function.
 
 TODO:
 Fix how std deviation is calculated in createLightCurve. It cannot use SUMIF.
-Fix recursive coincidence analysis to combine coincidences that could include each other.
-    (this is only relevant for coincidence scanning with 3 or more telescopes).
-Have the program use the GPS strings at the beginning of each file to synchronize the data.
-Note that 
 """
 
 import os, os.path # For changing the directory
