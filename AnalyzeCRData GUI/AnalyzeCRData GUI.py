@@ -220,8 +220,6 @@ def calc_starting_time(gpsString):
         return entry
     else:
         return 0 # months error somehow.
-
-
     
 # New: Incomplete
 # For every file conversion (the files are demarked by the GPS strings), use the GPS string
@@ -316,72 +314,10 @@ def readHEXtoDEC_GPSSYNC(filename):
     for x in range(len(values)):
         if values[x] == True:
             selectGpsTimes.append(formattedTimes[x])
-
-
-
-
-
-
-
-
-
-
+            
     startReferenceTime = joined[0][0] # This is a list of 5 strings: ["hh", "mm", "ss", "mm", dd"]
     
-####    for values in start_time_array:
-####        print(values)
-##    
-##    # TODO: Make sure that the starting times make sense.
-##    # Not that straightforward.
-##    # Can't just subtract the strings.
-##    timeDifferences = []
-##    for x in range(len(start_time_array) - 1):
-##        time1 = start_time_array[x+1]
-##        time  = start_time_array[x]
-##        entry = []
-##        for i in range(len(time1)):
-##            entry.append(int(time1[i]) - int(time[i]))
-##        timeDifferences.append(entry)
-##
-##    for i in timeDifferences:
-##        print(i)
-##    # Make sure that the timeDifferences array is REASONABLE
-##    # We're not going to preemptively see which files should be deleted.
-##    # timeDifferences is now an array
-    
-
-    
     return data, selectGpsTimes
-
-##def readHEXtoDEC_GPSSYNC(filename): # PSEUDOCODE
-##    global LM555FACTOR
-##    data = []
-##    selectGpsTimes = []
-##    gpsdata = []
-##
-##    calc_starting_time()
-##    # use GUI to ask if this starting time is reasonable before proceeding.
-##    # then iterate through all of the data, calculating each starting time.
-##    start_time_array = [calc_starting_time for i in range(len(gpsdata))]
-##    timeDifferences = []
-##    for x in range(len(start_time_array) - 1):
-##        timeDifferences.append(start_time_array[x+1] - start_time_array[x])
-##
-##    # Now iterate through the data.
-##    # Process the first file outside of the dataset.
-##    timeShift = 0
-##    while not ValueError:
-##        val = int(entry[6]) # integer conversion in data.
-##        data.append(val)
-##        fileNumber += 1
-##    for x in range(len(data)):
-##        
-##        if timeDifferences[fileNumber] != timeDifferences[fileNumber + 1]:
-##            # skip all entries until next gpsString (throw out the file)
-##            # Do the same timedifferences comparison, hoping the starting time is now constant
-##            # Now once the starting time is constant, add the difference from the first file
-##            timeShift += timeDifferences[x]    
-##    return data, selectGpsTime
 
 def readHEXtoDEC(filename):
     global LM555FACTOR
