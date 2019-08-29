@@ -1085,11 +1085,8 @@ def createLightCurve(outputFileName, tempDuration, genIntervals, maxIntervalDura
             index = x + 1
             # don't break yet
         else:
-            print(index == x)
             break
 
-            
-            # Don't break even though it could save time
     data = data[index:]
 
     # Now there are 2 arrays we have: data[] and timeStamps[]
@@ -1844,6 +1841,3 @@ elif (choice == 3):
 # So we are going to move to the default directory to allow ejection.
 os.chdir(defaultDirectory)
 print("You may now eject a flashdrive, but clear it and copy the files first.")
-##    input("Press 'ENTER' to be redirected to the functional prompt.\n")
-##    print("")
-  
