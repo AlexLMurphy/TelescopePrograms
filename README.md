@@ -7,6 +7,7 @@ These programs are not under active development; I am no longer conducting this 
 This program serves several data anlysis purposes. Most importantly, it is used for processing the hexadecimal output from telescope recordings. Data collection with the cosmic ray telescopes is time-sensitive because detector dead-time affects our results, so it is better to process the data afterwards. This program serves as a combination of many features that could be separate programs. See documentation for more details.
 
 External libraries can be installed using the pip command-line installer:
+
 $pip install openpyxl
 
 $pip install PySimpleGUI
