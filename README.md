@@ -13,4 +13,4 @@ $pip install openpyxl
 $pip install PySimpleGUI
 
 # CRTLfinal.ino
-This sketch was written to let the Arduino handle all circuit board processing. Links to libraries that were used are inside of the sketch commenting.
+This sketch was written to let the Arduino handle all circuit board processing. Links to libraries that were used are inside of the sketch commenting. Note that we made several wiring changes to the Sparkfun SD shield that we used.
