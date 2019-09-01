@@ -8,6 +8,7 @@ This program serves several data anlysis purposes. Most importantly, it is used 
 
 External libraries can be installed using the pip command-line installer:
 $pip install openpyxl
+
 $pip install PySimpleGUI
 
 # CRTLfinal.ino
