@@ -36,7 +36,7 @@ are needed.
 D2 - D9 are 8 pins used for clock binary inputs.
 D10 is used by the SD chipselect, but SD shield needs special soldering  
 D11 is now used for GPS TX to be compatible with the Leonardo
-D12 - 13 are NOT used, but lines on the SD shield need to be scratched out.
+D12 - 13 are NOT used, but lines on the SD shield need to be scratched out to use them.
 
 A0 is for reading trigger signal from clocks.
 A1 is now used for a button that saves all of the data on the SD card.
