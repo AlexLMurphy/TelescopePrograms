@@ -66,7 +66,7 @@ import PySimpleGUI as sg # GUI library
 directory = "F:\\" # Second backslash required to keep string format
 defaultDirectory = os.getcwd()
 namePattern = "F*.txt"
-LM555FACTOR = 255 # This number changes if the users says the Arduino was used
+LM555FACTOR = 255 # This number changes if the user says the Arduino was used
 ArduinoDeadTime = 0.001 # In seconds. Update this number if the dead time changes, or if new measurements are made. 
 BS2DeadTime = 0.275 # Also in seconds.
 
